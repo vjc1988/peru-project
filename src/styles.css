@@ -49,6 +49,34 @@ header a {
   display: inline-block;
 }
 
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
 footer {
   color: white;
   background-image: linear-gradient(
@@ -58,12 +86,12 @@ footer {
     url("../images/quecha-women.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 100px 0;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 footer h3 {
@@ -102,8 +130,19 @@ footer p {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.lake-titicaca-img {
+  max-width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -118,5 +157,12 @@ footer p {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
   }
 }
