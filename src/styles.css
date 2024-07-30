@@ -103,6 +103,7 @@ footer p {
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 64px;
 }
 
 @media (max-width: 1200px) {
